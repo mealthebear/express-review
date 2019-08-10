@@ -1,7 +1,9 @@
 // Controller here
+let todos = ['study for the TA', 'graduate from HR', 'get a job'];
+
 const controller = {
     get: (req, res) => {
-        res.status(200).send('Hello from GET');
+        res.status(200).send(todos);
     },
     post: (req, res) => {
         res.status(201).send('Hello from POST');
