@@ -21,8 +21,10 @@ class List extends Component {
     axios
       .get('/api')
       .then((todos) => {
-        this.setState({ todos })
-      }, () => console.log('retrieved todos!'))
+        this.setState({
+          todos: todos.data
+        }, () => console.log(this.state))
+      })
       .catch((err) => console.log(err))
   }
 
