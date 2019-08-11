@@ -6,10 +6,10 @@ router
   .route('/')
   .get(controller.get)
   .post(controller.post)
-  .delete(controller.delete)
 
-// router
-//  .route('/name')
+router
+ .route('/:index')
+ .delete(controller.delete)
 //  .get(controller.getName)
 
 module.exports = router;

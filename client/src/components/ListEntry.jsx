@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ListEntry = props => (
-  <li>
+  <li onClick={() => props.deleteTodo(props.idx)}>
     {props.todo}
   </li>
 );
